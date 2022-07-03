@@ -1,0 +1,167 @@
+$colorGris: rgb(206, 206, 206);
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+@import "header.scss";
+@import "footer.scss";
+
+/* PERSONALIZANDO MAIN DE INDEX */
+
+.contenedor{
+   display: grid;
+   gap: 20px;
+   justify-items: center;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr, 1fr, 1fr;
+   grid-template-areas:
+   " a "
+   " b "
+   " c ";
+   img{
+      width: 600px;
+      height: 750px;
+      border: double 5px;
+      padding: 0;
+      margin-top: 100PX;
+      &:hover{
+         transform: scale(1.2);
+      }
+   }
+   .img a{
+      grid-area:a ;
+   }
+  .img b{
+     grid-area:b ;
+   }
+  .img c{
+     grid-area:c ;
+   } 
+}
+
+/* PERSONALIZANDO MAIN DE GALERIA */
+@mixin imgGaleria {
+   height: 250px;
+   width: 80%;
+   border: double 5px;
+   padding: 0;
+   object-fit: cover;
+}
+.container{
+   padding:4rem;
+   margin-left: 8rem;
+   display: grid;
+   grid-template-areas:
+   "a b"
+   "a c"
+   "a d";
+   grid-template-rows: 1fr, 1fr, 1fr;
+   grid-template-columns:1fr 1fr;
+   .A {
+      grid-area: a;
+      img{
+         height: 780px;
+         border: double 5px;
+         padding: 0;
+         &:hover{
+            transform: scale(1.1);
+         }
+      }
+   }
+   .B {
+     grid-area: b;
+     img{
+      @include imgGaleria;
+      &:hover{
+         transform: scale(1.1);
+      }
+     }
+   }
+   .C {
+     grid-area: c;
+     img{
+      @include imgGaleria;
+      &:hover{
+         transform: scale(1.1);
+      }
+     }
+   }
+   .D {
+      grid-area: d;
+      img{
+         @include imgGaleria;
+         &:hover{
+            transform: scale(1.1);
+         }
+        }
+   }
+}
+
+/* PERSONALIZANDO MAIN DE REGISTRO */
+
+.registro {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   list-style-type: none;
+   font-family: 'Oswald', sans-serif;
+   padding: 1rem;
+   font-weight: bold;
+   font-style: italic;
+   color: rgb(0, 0, 0);
+   h2 {
+      font-family:'Oswald', sans-serif;
+      font-size: 2rem;
+      text-align: center;
+      margin: 1rem;
+      padding: 1rem;
+   }
+}
+/* PERSONALIZANDO MAIN DE CONTACTO */
+
+.contacto {
+   list-style-type: none;
+   margin: 10px;
+   padding: 20px;
+   font-family: 'Oswald', sans-serif;
+   font-weight: bold;
+   font-style: italic;
+   h2{
+      font-family:'Oswald', sans-serif;
+      font-size: 2rem;
+      text-align: center;
+      margin: 1rem;
+      padding: 1rem;
+   }
+}
+
+/* PERSONALIZANDO MAIN DE PREGUNTAS */
+.preguntas{
+
+   h2{
+      font-family:'Oswald', sans-serif;
+      font-size: 2rem;
+      text-align: center;
+      margin: 1rem;
+      padding: 1rem;
+   }
+   h6{
+      font-family:'Oswald', sans-serif;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 1rem;
+      padding: 0 2rem;
+   }
+   p{
+      font-family:'Oswald', sans-serif;
+      padding-left: 3rem;
+      padding-bottom: 1rem;
+   }
+   .tabla{
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+   }
+}

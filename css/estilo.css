@@ -90,6 +90,53 @@
         .menu .enlaces li a:hover {
           color: black; }
 
+.navInfoGa {
+  font-family: 'Oswald', sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.2rem; }
+  .navInfoGa .social {
+    display: flex;
+    margin-left: 2rem;
+    color: black; }
+    .navInfoGa .social p {
+      margin-top: 10px;
+      margin-right: 1rem;
+      font-size: 1.2rem; }
+      .navInfoGa .social p:hover {
+        color: #cecece; }
+    .navInfoGa .social .icon {
+      list-style-type: none; }
+      .navInfoGa .social .icon li {
+        display: inline-block; }
+        .navInfoGa .social .icon li a {
+          text-decoration: none;
+          color: black;
+          margin-right: 1rem;
+          margin-top: 10px;
+          font-size: 1.2rem; }
+          .navInfoGa .social .icon li a:hover {
+            color: #cecece; }
+  .navInfoGa .venta {
+    display: flex; }
+    .navInfoGa .venta p {
+      margin-top: 10px;
+      margin-right: 1rem; }
+      .navInfoGa .venta p:hover {
+        color: #cecece; }
+    .navInfoGa .venta li {
+      display: inline-block; }
+      .navInfoGa .venta li a {
+        text-decoration: none;
+        color: black;
+        margin-right: 1rem;
+        margin-top: 8px;
+        font-size: 1.2rem; }
+        .navInfoGa .venta li a:hover {
+          color: #cecece; }
+
 footer {
   font-family: 'Oswald', sans-serif;
   background-color: #cecece; }
@@ -165,6 +212,46 @@ footer {
     display: flex;
     justify-content: space-between; }
     .footerAbajo .final:hover {
+      color: white; }
+
+.footerGal {
+  font-family: 'Oswald', sans-serif;
+  background-color: #cecece; }
+  .footerGal .cajaF {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center; }
+    .footerGal .cajaF h4 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      color: black;
+      font-size: 1.5rem; }
+      .footerGal .cajaF h4:hover {
+        color: white; }
+    .footerGal .cajaF p {
+      margin: 1rem; }
+      .footerGal .cajaF p:hover {
+        color: white; }
+    .footerGal .cajaF li {
+      display: inline-block; }
+      .footerGal .cajaF li a {
+        text-decoration: none;
+        color: black;
+        margin-right: 1rem;
+        margin-top: 13px;
+        font-size: 2rem; }
+        .footerGal .cajaF li a:hover {
+          color: white; }
+  .footerGal h1 {
+    text-align: center; }
+    .footerGal h1:hover {
+      color: white; }
+  .footerGal .final {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between; }
+    .footerGal .final:hover {
       color: white; }
 
 /* PERSONALIZANDO MAIN DE INDEX */

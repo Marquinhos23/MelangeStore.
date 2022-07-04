@@ -107,3 +107,63 @@
         }
     }
 }
+.navInfoGa{
+    font-family:'Oswald', sans-serif;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+    .social{
+        display: flex;
+        margin-left: 2rem;
+        color: black;
+        p{
+            margin-top: 10px;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            &:hover {
+                color :$colorGris;
+                }
+        }
+        .icon{
+            list-style-type: none;
+            li{
+                display: inline-block;
+                a{
+                    text-decoration: none;
+                    color:black;
+                    margin-right: 1rem;
+                    margin-top: 10px;
+                    font-size: 1.2rem;
+                    &:hover {
+                        color :$colorGris;
+                        }
+                }
+            }
+        }
+        }
+    .venta{
+        display: flex;
+        p{
+            margin-top: 10px;
+            margin-right: 1rem;
+            &:hover {
+                color :$colorGris;
+                }
+        }
+        li{
+            display: inline-block;
+            a{
+                text-decoration: none;
+                color:black;
+                margin-right: 1rem;
+                margin-top: 8px;
+                font-size: 1.2rem;
+                &:hover {
+                    color :$colorGris;
+                    }
+            }
+        }
+    }
+}

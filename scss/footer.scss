@@ -102,3 +102,56 @@ footer {
            }
     }
  }
+
+ .footerGal {
+  font-family:'Oswald', sans-serif;
+   background-color: $colorGris;
+   .cajaF{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     text-align: center;
+     h4{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color:black;
+        font-size: 1.5rem;
+        &:hover {
+           color: white;
+             }
+     }
+     p{
+      margin: 1rem;
+        &:hover {
+           color: white;
+             }
+     }
+     li{
+        display: inline-block;
+        a{
+            text-decoration: none;
+            color:black;
+            margin-right: 1rem;
+            margin-top: 13px;
+            font-size: 2rem;
+            &:hover {
+              color: white;
+                }
+        }
+    }
+   }
+   h1{
+     text-align: center;
+     &:hover {
+        color: white;
+          }
+   }
+   .final{
+     margin: 5px;
+     display: flex;
+     justify-content: space-between;
+     &:hover {
+        color: white;
+          }
+   }
+}
